@@ -43,4 +43,15 @@ prevBtn.addEventListener('click', function () {
         changeSlide = slides.length - 1;
         slides[changeSlide].classList.add("show");
     }
+
+  // Scroll Reveal Settings 
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+sr.reveal('.portfolio-img', {interval: 200});
 });
